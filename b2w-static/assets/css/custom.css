@@ -1,0 +1,17 @@
+    /* Font  Family Codes==
+ .tk-nimbus-sans 
+font-family: 'Raleway', sans-serif;
+*/
+    /* color referances 
+Green: #79b044
+Salmon: #dd5638
+Blue Gray: #3e4249
+*/
+    /* General */
+    
+    body {
+        margin-top: 50px;
+        font-family: 'nimbus-sans', 'Raleway', Helvetica, sans-serif;
+        font-size: 16px;
+        /* background: url('../img/tile.jpg') top left repeat; */
+    }
