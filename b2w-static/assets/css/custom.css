@@ -76,6 +76,23 @@ h4 {
     font-size: 18px;
 }
 
+p {
+    margin: 0 0 15px;
+}
+
+p.lead{
+    font-weight: normal;
+}
+
+a:link, a:visited {
+    color: #dd5638;
+} 
+
+a:link, a:visited:hover {
+ color: #c9302c;
+ text-decoration: none;
+}
+
 button,
 input,
 .btn,
@@ -89,9 +106,24 @@ a.btn {
     font-weight: bold
 }
 
+.button.btn:focus{
+outline: none !important;
+}
+
 .btn-danger {
     background-color: #dd5638;
     border-collapse: #d95161;
+}
+
+.btn-success {
+    background-color: #79b044;
+    border: none;
+} 
+
+.btn-success:hover {
+    background-color: #6a9b3d;
+    border-color: #6a9b3d;
+
 }
 
 .modal-content {
@@ -219,6 +251,10 @@ blockquote:before {
 
 /* ────── LAYOUT ───────────────────────────────────────── */
 
+.row + .row{
+    margin-top: 20px;
+}
+
 section {
     padding: 80px 0;
 }
@@ -319,6 +355,110 @@ section h2 {
     -moz-border-radius: 50%;
 }
 
+#signup {
+    text-align: center;
+    background: url('../img/hipster-stuff.jpg') center center repeat fixed;
+    background-size: cover;
+    color: white;
+    padding: 140px 0;
+}
+
+#signup h2 {
+    font-weight: normal;
+}
+
+#signup h2 strong {
+    border-bottom: solid 2px #dd5638;
+}
+
+#signup .btn {
+    font-size: 24px;
+}
+
+footer {
+    background: #3e4249;
+    color: white;
+    padding: 20px 0 10px;
+    font-size: 12px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a:link,
+footer a:visited {
+    color: white;
+}
+
+footer a:hover {
+    color: #dd5638;
+}
+
+footer li.signup-link a {
+    color: #dd5638;
+}
+
+footer li.signup-link a:hover {
+    font-weight: bold;
+}
+
+/* ==== BLOG ==== */
+
+.post,
+.widget,
+#comments {
+    position: relative;
+    border: solid 1px #ddd;
+    background: white;
+    margin: 0 0 40px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.post header,
+.post .post-excerpt,
+.post .post-body,
+#comments .comments-wrap {
+    padding: 20px;
+}
+
+.post header h3 {
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+    border-bottom: solid 1px #ddd;
+}
+
+.post header h1 {
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+    border-bottom: solid 1px #ddd;
+    font-size: 24px;
+}
+
+.post-image {
+    height: auto;
+}
+
+.post-image img {
+    width: 100%;
+}
+.post-details {
+    font-size: 12px;
+    width: 90%;
+}
+
+.post-details i.fa {
+    padding-left: 10px;
+}
+
+.post-details i.fa:first-child {
+    padding: 0;
+}
+/* ───────────────────────────────────────────────── BLOG ───── */
+    
+
 
 /* ─────────────────────────────────────── LAYOUT ───── */
 
@@ -358,3 +498,50 @@ i.ci {
 
 
 /* ────────────────────────────────── CUSTOM ICON SPRITES ───── */
+
+/* ────── MEDIA QUERIES ────────────────────────────────────────── */
+    
+@media screen and (max-width : 991px) {
+    #instructor .container {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .logo {
+        width: 50%;
+    }
+
+    #optin p {
+        margin: 0 0 10px;
+    }
+
+    #featurette iframe {
+        height: 240px;
+    }
+
+    .resource {
+        width: 48%;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (max-width : 568px) {
+    #instructor .num {
+        height: 100px;
+        width: 100px;
+        font-size: 22px;
+    }
+
+    #instructor .num span {
+        font-size: 16px;
+    }
+
+    .resource {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+/* ──────────────────────────────────────── MEDIA QUERIES ───── */
+    
